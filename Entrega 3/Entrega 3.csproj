@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\Actor.cs" />
     <Compile Include="Clases\Album.cs" />
     <Compile Include="Clases\ChangePasswordEventargs.cs" />
     <Compile Include="Clases\Database.cs" />
@@ -55,9 +54,6 @@
     <Compile Include="Clases\ProfileManagment.cs" />
     <Compile Include="Clases\ProfileUser.cs" />
     <Compile Include="Clases\RegisterEventArgs.cs" />
-    <Compile Include="Clases\Reproductor.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Clases\SearchClass.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
