@@ -1,5 +1,4 @@
-﻿namespace Entrega_3
-{
+﻿namespace Entrega_3.Clases
     partial class Form1
     {
         /// <summary>
