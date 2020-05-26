@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 namespace Entrega_3.Clases
 
-{
-    public class Album
+{ //Probando probando
+    public class Album 
     {
 
 
@@ -26,5 +26,7 @@ namespace Entrega_3.Clases
         public List<SongClass> ListSongs { get => listSongs; set => listSongs = value; }
         public Singer Singer { get => singer; set => singer = value; }
         public DateTime PublicationDate { get => publicationDate; set => publicationDate = value; }
+
+        
     }
 }
