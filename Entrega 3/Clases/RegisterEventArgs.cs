@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-namespace EntregaProyecto2
+namespace Entrega_3.Clases
 {
     public class RegisterEventArgs : EventArgs
     {

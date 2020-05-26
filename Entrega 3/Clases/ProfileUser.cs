@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.IO;
 
-namespace EntregaProyecto2
+namespace Entrega_3.Clases
 {
     [Serializable] // Necesario para poder importar canciones y videos. Necesito guardar usuarios.
     public class ProfilelUser
