@@ -92,31 +92,5 @@ namespace Entrega_3.Clases
 
 
 
-        //probando
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
