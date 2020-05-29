@@ -24,7 +24,9 @@ namespace Entrega_3
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            PanelLogin panel = new PanelLogin();
+            panel.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
