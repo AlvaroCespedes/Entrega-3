@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
+using System.Windows.Forms;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Entrega_3.Clases
 
@@ -90,7 +93,29 @@ namespace Entrega_3.Clases
             return true;
         }
 
+        public int GuardarUsuario() // Falta parte del forms. Minuto 9:15
+        {
+            try
+            {
+                SaveFileDialog dialog = new SaveFileDialog();
+                if (dialog.ShowDialog() == DialogResult.OK)//Si es que el usuario agrego un archivo para guardar.
+                {
+                    Stream st = File.Open(dialog.FileName, FileMode.Create);
+                    var binfor = new BinaryFormatter();
+                    binfor.Serialize(st, this); // --> hace referencia a toda la clase
+                    return 0; //Todo salio bien
+                }
+                else
+                {
+                    return 1; //En caso de que no
 
+                }
+            }
+            catch
+            {
+                return 2;
+            }
+        }
 
     }
 }
