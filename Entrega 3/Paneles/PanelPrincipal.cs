@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entrega_3.Paneles;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,9 @@ namespace Entrega_3
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            PanelRegistro panelregistro = new PanelRegistro();
+            panelregistro.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)

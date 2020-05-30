@@ -10,12 +10,33 @@ using System.Windows.Forms;
 
 namespace Entrega_3
 {
+
     public partial class PanelLogin : Form
     {
+
         public PanelLogin()
         {
             InitializeComponent();
         }
+
+        Clases.DataBase database = new Clases.DataBase();
+       
+        Clases.MailSender mailSender = new Clases.MailSender();
+      
+        Clases.User user = new Clases.User();
+        DateTime hora = new DateTime();
+   
+        Clases.ProfilelUser perfi2 = new Clases.ProfilelUser();
+        double intervalo = 1000;
+        
+        //SongClass cancion = new SongClass(); Ya instancie este objeto.
+        //Video video = new Video(); // YA instancie
+        Clases.ProfileManagment profileManagment = new Clases.ProfileManagment();
+        IDictionary<Clases.User, List<Clases.Profile>> diccUserProfiles = new Dictionary<Clases.User, List<Clases.Profile>>();
+
+   
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
