@@ -1,6 +1,6 @@
 ﻿namespace Entrega_3.Paneles
 {
-    partial class PanelRegistro
+    partial class FormsRegistro
     {
         /// <summary>
         /// Required designer variable.
@@ -28,58 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtNombreR = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.TxtEmail = new System.Windows.Forms.TextBox();
+            this.TxtApellidoR = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtConfirmarcontraseña = new System.Windows.Forms.TextBox();
+            this.txtEmailR = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.txtContraseñaR = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtNumerocelular = new System.Windows.Forms.TextBox();
+            this.txtNumerocelularR = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtANombreUsuarioR = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtNombreusuario = new System.Windows.Forms.TextBox();
+            this.txtConfirmacionContraseñaR = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtGenero = new System.Windows.Forms.TextBox();
-            this.txtEdad = new System.Windows.Forms.TextBox();
+            this.txtEdadR = new System.Windows.Forms.TextBox();
+            this.txtGeneroR = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtNacionalidad = new System.Windows.Forms.TextBox();
+            this.txtNacionalidadR = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtOcupacion = new System.Windows.Forms.TextBox();
+            this.txtOcupacionR = new System.Windows.Forms.TextBox();
             this.btnContinuar1 = new System.Windows.Forms.Button();
-            this.btnVolver1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnVolverTarjeta = new System.Windows.Forms.Button();
+            this.btnContinuarTarjeta = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtNumeroTarjeta = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.btnContinuar2 = new System.Windows.Forms.Button();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.label13 = new System.Windows.Forms.Label();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.btnContinuarTarjeta = new System.Windows.Forms.Button();
-            this.btnVolverTarjeta = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtNombre
+            // txtNombreR
             // 
-            this.txtNombre.Location = new System.Drawing.Point(211, 20);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
-            this.txtNombre.TabIndex = 4;
-            this.txtNombre.TextChanged += new System.EventHandler(this.txtnombre_TextChanged);
+            this.txtNombreR.Location = new System.Drawing.Point(211, 22);
+            this.txtNombreR.Name = "txtNombreR";
+            this.txtNombreR.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreR.TabIndex = 4;
+            this.txtNombreR.TextChanged += new System.EventHandler(this.txtnombre_TextChanged);
             // 
             // label1
             // 
@@ -90,13 +90,13 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Nombre ";
             // 
-            // TxtEmail
+            // TxtApellidoR
             // 
-            this.TxtEmail.Location = new System.Drawing.Point(211, 77);
-            this.TxtEmail.Name = "TxtEmail";
-            this.TxtEmail.Size = new System.Drawing.Size(100, 20);
-            this.TxtEmail.TabIndex = 6;
-            this.TxtEmail.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.TxtApellidoR.Location = new System.Drawing.Point(211, 54);
+            this.TxtApellidoR.Name = "TxtApellidoR";
+            this.TxtApellidoR.Size = new System.Drawing.Size(100, 20);
+            this.TxtApellidoR.TabIndex = 6;
+            this.TxtApellidoR.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
@@ -107,12 +107,12 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Contraseña";
             // 
-            // txtConfirmarcontraseña
+            // txtEmailR
             // 
-            this.txtConfirmarcontraseña.Location = new System.Drawing.Point(211, 135);
-            this.txtConfirmarcontraseña.Name = "txtConfirmarcontraseña";
-            this.txtConfirmarcontraseña.Size = new System.Drawing.Size(100, 20);
-            this.txtConfirmarcontraseña.TabIndex = 8;
+            this.txtEmailR.Location = new System.Drawing.Point(211, 80);
+            this.txtEmailR.Name = "txtEmailR";
+            this.txtEmailR.Size = new System.Drawing.Size(100, 20);
+            this.txtEmailR.TabIndex = 8;
             // 
             // label3
             // 
@@ -123,12 +123,13 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Confirme Contraseña";
             // 
-            // txtContraseña
+            // txtContraseñaR
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(211, 103);
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(100, 20);
-            this.txtContraseña.TabIndex = 10;
+            this.txtContraseñaR.Location = new System.Drawing.Point(211, 107);
+            this.txtContraseñaR.Name = "txtContraseñaR";
+            this.txtContraseñaR.PasswordChar = '*';
+            this.txtContraseñaR.Size = new System.Drawing.Size(100, 20);
+            this.txtContraseñaR.TabIndex = 10;
             // 
             // label4
             // 
@@ -139,12 +140,12 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Email";
             // 
-            // txtNumerocelular
+            // txtNumerocelularR
             // 
-            this.txtNumerocelular.Location = new System.Drawing.Point(211, 192);
-            this.txtNumerocelular.Name = "txtNumerocelular";
-            this.txtNumerocelular.Size = new System.Drawing.Size(100, 20);
-            this.txtNumerocelular.TabIndex = 16;
+            this.txtNumerocelularR.Location = new System.Drawing.Point(211, 192);
+            this.txtNumerocelularR.Name = "txtNumerocelularR";
+            this.txtNumerocelularR.Size = new System.Drawing.Size(100, 20);
+            this.txtNumerocelularR.TabIndex = 16;
             // 
             // label5
             // 
@@ -155,12 +156,12 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "Nombre usuario";
             // 
-            // txtApellido
+            // txtANombreUsuarioR
             // 
-            this.txtApellido.Location = new System.Drawing.Point(211, 51);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(100, 20);
-            this.txtApellido.TabIndex = 14;
+            this.txtANombreUsuarioR.Location = new System.Drawing.Point(211, 161);
+            this.txtANombreUsuarioR.Name = "txtANombreUsuarioR";
+            this.txtANombreUsuarioR.Size = new System.Drawing.Size(100, 20);
+            this.txtANombreUsuarioR.TabIndex = 14;
             // 
             // label6
             // 
@@ -171,12 +172,13 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Apellido";
             // 
-            // txtNombreusuario
+            // txtConfirmacionContraseñaR
             // 
-            this.txtNombreusuario.Location = new System.Drawing.Point(211, 161);
-            this.txtNombreusuario.Name = "txtNombreusuario";
-            this.txtNombreusuario.Size = new System.Drawing.Size(100, 20);
-            this.txtNombreusuario.TabIndex = 12;
+            this.txtConfirmacionContraseñaR.Location = new System.Drawing.Point(211, 135);
+            this.txtConfirmacionContraseñaR.Name = "txtConfirmacionContraseñaR";
+            this.txtConfirmacionContraseñaR.PasswordChar = '*';
+            this.txtConfirmacionContraseñaR.Size = new System.Drawing.Size(100, 20);
+            this.txtConfirmacionContraseñaR.TabIndex = 12;
             // 
             // label7
             // 
@@ -206,19 +208,19 @@
             this.label10.Text = "Genero";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // txtGenero
+            // txtEdadR
             // 
-            this.txtGenero.Location = new System.Drawing.Point(211, 252);
-            this.txtGenero.Name = "txtGenero";
-            this.txtGenero.Size = new System.Drawing.Size(100, 20);
-            this.txtGenero.TabIndex = 19;
+            this.txtEdadR.Location = new System.Drawing.Point(211, 227);
+            this.txtEdadR.Name = "txtEdadR";
+            this.txtEdadR.Size = new System.Drawing.Size(100, 20);
+            this.txtEdadR.TabIndex = 19;
             // 
-            // txtEdad
+            // txtGeneroR
             // 
-            this.txtEdad.Location = new System.Drawing.Point(211, 224);
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(100, 20);
-            this.txtEdad.TabIndex = 20;
+            this.txtGeneroR.Location = new System.Drawing.Point(211, 253);
+            this.txtGeneroR.Name = "txtGeneroR";
+            this.txtGeneroR.Size = new System.Drawing.Size(100, 20);
+            this.txtGeneroR.TabIndex = 20;
             // 
             // label9
             // 
@@ -229,12 +231,12 @@
             this.label9.TabIndex = 21;
             this.label9.Text = "Ocupacion";
             // 
-            // txtNacionalidad
+            // txtNacionalidadR
             // 
-            this.txtNacionalidad.Location = new System.Drawing.Point(211, 278);
-            this.txtNacionalidad.Name = "txtNacionalidad";
-            this.txtNacionalidad.Size = new System.Drawing.Size(100, 20);
-            this.txtNacionalidad.TabIndex = 22;
+            this.txtNacionalidadR.Location = new System.Drawing.Point(211, 285);
+            this.txtNacionalidadR.Name = "txtNacionalidadR";
+            this.txtNacionalidadR.Size = new System.Drawing.Size(100, 20);
+            this.txtNacionalidadR.TabIndex = 22;
             // 
             // label8
             // 
@@ -245,12 +247,12 @@
             this.label8.TabIndex = 23;
             this.label8.Text = "Nacionalidad";
             // 
-            // txtOcupacion
+            // txtOcupacionR
             // 
-            this.txtOcupacion.Location = new System.Drawing.Point(211, 309);
-            this.txtOcupacion.Name = "txtOcupacion";
-            this.txtOcupacion.Size = new System.Drawing.Size(100, 20);
-            this.txtOcupacion.TabIndex = 24;
+            this.txtOcupacionR.Location = new System.Drawing.Point(211, 309);
+            this.txtOcupacionR.Name = "txtOcupacionR";
+            this.txtOcupacionR.Size = new System.Drawing.Size(100, 20);
+            this.txtOcupacionR.TabIndex = 24;
             // 
             // btnContinuar1
             // 
@@ -262,15 +264,6 @@
             this.btnContinuar1.UseVisualStyleBackColor = true;
             this.btnContinuar1.Click += new System.EventHandler(this.btnContinuar_Click);
             // 
-            // btnVolver1
-            // 
-            this.btnVolver1.Location = new System.Drawing.Point(357, 70);
-            this.btnVolver1.Name = "btnVolver1";
-            this.btnVolver1.Size = new System.Drawing.Size(48, 23);
-            this.btnVolver1.TabIndex = 26;
-            this.btnVolver1.Text = "Volver";
-            this.btnVolver1.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.panel2);
@@ -279,11 +272,115 @@
             this.panel1.Controls.Add(this.radioButton5);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.radioButton4);
-            this.panel1.Location = new System.Drawing.Point(1, 0);
+            this.panel1.Location = new System.Drawing.Point(2, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(450, 340);
+            this.panel1.Size = new System.Drawing.Size(475, 342);
             this.panel1.TabIndex = 27;
             this.panel1.Visible = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnVolverTarjeta);
+            this.panel2.Controls.Add(this.btnContinuarTarjeta);
+            this.panel2.Controls.Add(this.label16);
+            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.label15);
+            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.txtNumeroTarjeta);
+            this.panel2.Location = new System.Drawing.Point(0, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(477, 336);
+            this.panel2.TabIndex = 11;
+            this.panel2.Visible = false;
+            // 
+            // btnVolverTarjeta
+            // 
+            this.btnVolverTarjeta.Location = new System.Drawing.Point(47, 256);
+            this.btnVolverTarjeta.Name = "btnVolverTarjeta";
+            this.btnVolverTarjeta.Size = new System.Drawing.Size(75, 23);
+            this.btnVolverTarjeta.TabIndex = 9;
+            this.btnVolverTarjeta.Text = "Volver";
+            this.btnVolverTarjeta.UseVisualStyleBackColor = true;
+            this.btnVolverTarjeta.Click += new System.EventHandler(this.btnVolverTarjeta_Click);
+            // 
+            // btnContinuarTarjeta
+            // 
+            this.btnContinuarTarjeta.Location = new System.Drawing.Point(285, 256);
+            this.btnContinuarTarjeta.Name = "btnContinuarTarjeta";
+            this.btnContinuarTarjeta.Size = new System.Drawing.Size(75, 23);
+            this.btnContinuarTarjeta.TabIndex = 8;
+            this.btnContinuarTarjeta.Text = "Continuar";
+            this.btnContinuarTarjeta.UseVisualStyleBackColor = true;
+            this.btnContinuarTarjeta.Click += new System.EventHandler(this.btnContinuarTarjeta_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(49, 189);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(41, 13);
+            this.label16.TabIndex = 7;
+            this.label16.Text = "label16";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(160, 104);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.TabIndex = 6;
+            this.textBox4.Text = "dia/mes/año";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(44, 144);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(88, 13);
+            this.label15.TabIndex = 5;
+            this.label15.Text = "codigo seguridad";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(160, 181);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 4;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(44, 107);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(96, 13);
+            this.label14.TabIndex = 3;
+            this.label14.Text = "Fecha caducacion";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(160, 137);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
+            this.textBox2.Size = new System.Drawing.Size(48, 20);
+            this.textBox2.TabIndex = 2;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(47, 57);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(76, 13);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Numero tarjeta";
+            // 
+            // txtNumeroTarjeta
+            // 
+            this.txtNumeroTarjeta.Location = new System.Drawing.Point(160, 54);
+            this.txtNumeroTarjeta.Name = "txtNumeroTarjeta";
+            this.txtNumeroTarjeta.Size = new System.Drawing.Size(100, 20);
+            this.txtNumeroTarjeta.TabIndex = 0;
             // 
             // radioButton1
             // 
@@ -336,139 +433,47 @@
             this.radioButton4.Text = "plan premiun (personal) $3,990";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // btnSalir
             // 
-            this.panel2.Controls.Add(this.btnVolverTarjeta);
-            this.panel2.Controls.Add(this.btnContinuarTarjeta);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(307, 234);
-            this.panel2.TabIndex = 11;
-            this.panel2.Visible = false;
+            this.btnSalir.Location = new System.Drawing.Point(2, 306);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 29;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(160, 54);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(47, 57);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(76, 13);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Numero tarjeta";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(44, 107);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(96, 13);
-            this.label14.TabIndex = 3;
-            this.label14.Text = "Fecha caducacion";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(160, 137);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(44, 144);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(88, 13);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "codigo seguridad";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(160, 181);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 4;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(49, 189);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(41, 13);
-            this.label16.TabIndex = 7;
-            this.label16.Text = "label16";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(160, 104);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 6;
-            this.textBox4.Text = "dia/mes/año";
-            // 
-            // btnContinuarTarjeta
-            // 
-            this.btnContinuarTarjeta.Location = new System.Drawing.Point(285, 256);
-            this.btnContinuarTarjeta.Name = "btnContinuarTarjeta";
-            this.btnContinuarTarjeta.Size = new System.Drawing.Size(75, 23);
-            this.btnContinuarTarjeta.TabIndex = 8;
-            this.btnContinuarTarjeta.Text = "Continuar";
-            this.btnContinuarTarjeta.UseVisualStyleBackColor = true;
-            // 
-            // btnVolverTarjeta
-            // 
-            this.btnVolverTarjeta.Location = new System.Drawing.Point(47, 256);
-            this.btnVolverTarjeta.Name = "btnVolverTarjeta";
-            this.btnVolverTarjeta.Size = new System.Drawing.Size(75, 23);
-            this.btnVolverTarjeta.TabIndex = 9;
-            this.btnVolverTarjeta.Text = "Volver";
-            this.btnVolverTarjeta.UseVisualStyleBackColor = true;
-            this.btnVolverTarjeta.Click += new System.EventHandler(this.btnVolverTarjeta_Click);
-            // 
-            // PanelRegistro
+            // FormsRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 337);
+            this.ClientSize = new System.Drawing.Size(476, 344);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnVolver1);
             this.Controls.Add(this.btnContinuar1);
-            this.Controls.Add(this.txtOcupacion);
+            this.Controls.Add(this.txtOcupacionR);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtNacionalidad);
+            this.Controls.Add(this.txtNacionalidadR);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtEdad);
-            this.Controls.Add(this.txtGenero);
+            this.Controls.Add(this.txtGeneroR);
+            this.Controls.Add(this.txtEdadR);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.txtNumerocelular);
+            this.Controls.Add(this.txtNumerocelularR);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.txtANombreUsuarioR);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtNombreusuario);
+            this.Controls.Add(this.txtConfirmacionContraseñaR);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtContraseña);
+            this.Controls.Add(this.txtContraseñaR);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtConfirmarcontraseña);
+            this.Controls.Add(this.txtEmailR);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.TxtEmail);
+            this.Controls.Add(this.TxtApellidoR);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtNombreR);
             this.Controls.Add(this.label1);
-            this.Name = "PanelRegistro";
+            this.Name = "FormsRegistro";
             this.Text = "v";
             this.Load += new System.EventHandler(this.PanelRegistro_Load);
             this.panel1.ResumeLayout(false);
@@ -482,30 +487,29 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtNombreR;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TxtEmail;
+        private System.Windows.Forms.TextBox TxtApellidoR;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtConfirmarcontraseña;
+        private System.Windows.Forms.TextBox txtEmailR;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.TextBox txtContraseñaR;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtNumerocelular;
+        private System.Windows.Forms.TextBox txtNumerocelularR;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtANombreUsuarioR;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtNombreusuario;
+        private System.Windows.Forms.TextBox txtConfirmacionContraseñaR;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtGenero;
-        private System.Windows.Forms.TextBox txtEdad;
+        private System.Windows.Forms.TextBox txtEdadR;
+        private System.Windows.Forms.TextBox txtGeneroR;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtNacionalidad;
+        private System.Windows.Forms.TextBox txtNacionalidadR;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtOcupacion;
+        private System.Windows.Forms.TextBox txtOcupacionR;
         private System.Windows.Forms.Button btnContinuar1;
-        private System.Windows.Forms.Button btnVolver1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnContinuar2;
         private System.Windows.Forms.RadioButton radioButton5;
@@ -522,6 +526,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNumeroTarjeta;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

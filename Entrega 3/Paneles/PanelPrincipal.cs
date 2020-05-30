@@ -21,7 +21,7 @@ namespace Entrega_3
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            PanelRegistro panelregistro = new PanelRegistro();
+            FormsRegistro panelregistro = new FormsRegistro();
             panelregistro.Show();
         }
 

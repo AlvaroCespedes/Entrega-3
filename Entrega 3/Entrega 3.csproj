@@ -80,11 +80,11 @@
     <Compile Include="Paneles\PanelLogin.Designer.cs">
       <DependentUpon>PanelLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Paneles\PanelRegistro.cs">
+    <Compile Include="Paneles\FormsRegistro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Paneles\PanelRegistro.Designer.cs">
-      <DependentUpon>PanelRegistro.cs</DependentUpon>
+    <Compile Include="Paneles\FormsRegistro.Designer.cs">
+      <DependentUpon>FormsRegistro.cs</DependentUpon>
     </Compile>
     <Compile Include="Paneles\PanelUsuario.cs">
       <SubType>Form</SubType>
@@ -100,8 +100,8 @@
     <EmbeddedResource Include="Paneles\PanelLogin.resx">
       <DependentUpon>PanelLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Paneles\PanelRegistro.resx">
-      <DependentUpon>PanelRegistro.cs</DependentUpon>
+    <EmbeddedResource Include="Paneles\FormsRegistro.resx">
+      <DependentUpon>FormsRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
