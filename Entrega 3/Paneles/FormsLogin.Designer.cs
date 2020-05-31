@@ -35,6 +35,8 @@
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.panelInicioSecionUsurarioBasico = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // button1
@@ -100,11 +102,32 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Login";
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(169, 335);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(104, 13);
+            this.linkLabel1.TabIndex = 7;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "olvide mi contraseña";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // panelInicioSecionUsurarioBasico
+            // 
+            this.panelInicioSecionUsurarioBasico.Location = new System.Drawing.Point(0, 0);
+            this.panelInicioSecionUsurarioBasico.Name = "panelInicioSecionUsurarioBasico";
+            this.panelInicioSecionUsurarioBasico.Size = new System.Drawing.Size(515, 246);
+            this.panelInicioSecionUsurarioBasico.TabIndex = 8;
+            this.panelInicioSecionUsurarioBasico.Visible = false;
+            // 
             // PanelLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(527, 428);
+            this.ClientSize = new System.Drawing.Size(518, 428);
+            this.Controls.Add(this.panelInicioSecionUsurarioBasico);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUser);
@@ -128,5 +151,7 @@
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Panel panelInicioSecionUsurarioBasico;
     }
 }

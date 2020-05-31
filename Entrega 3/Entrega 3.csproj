@@ -74,11 +74,11 @@
     <Compile Include="Paneles\PanelPrincipal.Designer.cs">
       <DependentUpon>PanelPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Paneles\PanelLogin.cs">
+    <Compile Include="Paneles\FormsLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Paneles\PanelLogin.Designer.cs">
-      <DependentUpon>PanelLogin.cs</DependentUpon>
+    <Compile Include="Paneles\FormsLogin.Designer.cs">
+      <DependentUpon>FormsLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Paneles\FormsRegistro.cs">
       <SubType>Form</SubType>
@@ -97,8 +97,8 @@
     <EmbeddedResource Include="Paneles\PanelPrincipal.resx">
       <DependentUpon>PanelPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Paneles\PanelLogin.resx">
-      <DependentUpon>PanelLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Paneles\FormsLogin.resx">
+      <DependentUpon>FormsLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Paneles\FormsRegistro.resx">
       <DependentUpon>FormsRegistro.cs</DependentUpon>

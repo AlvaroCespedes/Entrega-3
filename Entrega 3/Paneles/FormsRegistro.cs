@@ -95,41 +95,60 @@ namespace Entrega_3.Paneles
 
         private void btnContinuar2_Click(object sender, EventArgs e)
         {
-            if (radioButton1.Checked == true)
+            string usr = txtANombreUsuarioR.Text;
+            string number = txtNumerocelularR.Text;
+            string psswd = txtContraseñaR.Text;
+            string name = txtNombreR.Text;
+            string Age = txtEdadR.Text;
+            int edad = Int32.Parse(Age);//convierto la edad que esta en texto a number
+            string lastname = TxtApellidoR.Text;
+            string gender = txtGeneroR.Text;
+            string nationality = txtNacionalidadR.Text;
+            string ocuppation = txtOcupacionR.Text;
+            string email = txtEmailR.Text;
+            DateTime dateRegister = new DateTime();
+
+            if (radioButton1.Checked == true)//plan basico
             {
                 MessageBox.Show("Plan basico seleccionado, no se realizaran cargos en su tarjeta");
 
+         
+                string planSeleccionado = "Basico";
+                string infopago = "0";
+                
+                Clases.User usuario = new Clases.User(usr, number, psswd, name, edad, lastname, gender, nationality, ocuppation, email, infopago, planSeleccionado, dateRegister);
+                usuarios.Add(usuario);
             }
-            else if (radioButton4.Checked == true)
+            else if (radioButton4.Checked == true) //plan premiun
             {
+
+
+
                 
-                
-                string usr = txtANombreUsuarioR.Text;
-;                string number = txtNumerocelularR.Text;
-                string psswd =txtContraseñaR.Text;
-                string name = txtNombreR.Text;
-                string Age = txtEdadR.Text;
-                int edad = Int32.Parse(Age);//convierto la edad que esta en texto a number
-                string lastname = TxtApellidoR.Text;
-                string gender = txtGeneroR.Text;
-                string nationality = txtNacionalidadR.Text;
-                string ocuppation = txtOcupacionR.Text;
-                string email = txtEmailR.Text;
-                string planSeleccionado = "premiun";
-                string infopago = txtNumeroTarjeta.Text;
                 MessageBox.Show("Para continuar complete su forma de pago");
                 panel2.Visible = true;
-                DateTime dateRegister = new DateTime();
+                string planSeleccionado = "premiun";
+                string infopago = txtNumeroTarjeta.Text;
+
 
                 //Agregar el usario a una lista de usuarios
                 Clases.User usuario = new Clases.User(usr, number, psswd, name, edad, lastname, gender, nationality, ocuppation, email, infopago, planSeleccionado, dateRegister);
                 usuarios.Add(usuario);
             }
-            else if (radioButton5.Checked==true)
+            else if (radioButton5.Checked==true)//plan familiar
             {
                 MessageBox.Show("Para continuar complete su forma de pago");
-                
+                string planSeleccionado = "Familiar";
+                string infopago = txtNumeroTarjeta.Text;
+                MessageBox.Show("Para continuar complete su forma de pago");
                 panel2.Visible = true;
+
+
+                //Agregar el usario a una lista de usuarios
+                Clases.User usuario = new Clases.User(usr, number, psswd, name, edad, lastname, gender, nationality, ocuppation, email, infopago, planSeleccionado, dateRegister);
+                usuarios.Add(usuario);
+
+
             }
             else
             {
@@ -160,9 +179,18 @@ namespace Entrega_3.Paneles
 
         private void btnContinuarTarjeta_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form1 form1 = new Form1();
-            form1.Show();
+            if (txtNumeroTarjeta.Text == ""  || txtFechaCaducacionTarjeta.Text=="" ||txtCodigoSeguridadTarjeta.Text=="")
+            {
+                MessageBox.Show("PARA CONTINUAR RELLENE TODOS LOS DATOS");
+            }
+
+            else
+            {
+                this.Hide();
+                Form1 form1 = new Form1();
+                form1.Show();
+            }
+          
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -171,6 +199,11 @@ namespace Entrega_3.Paneles
             this.Hide();
             Form1 form1 = new Form1();
             form1.Show();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -55,12 +55,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnVolverTarjeta = new System.Windows.Forms.Button();
             this.btnContinuarTarjeta = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtFechaCaducacionTarjeta = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCodigoSeguridadTarjeta = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtNumeroTarjeta = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -282,12 +280,10 @@
             // 
             this.panel2.Controls.Add(this.btnVolverTarjeta);
             this.panel2.Controls.Add(this.btnContinuarTarjeta);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.txtFechaCaducacionTarjeta);
             this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txtCodigoSeguridadTarjeta);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.txtNumeroTarjeta);
             this.panel2.Location = new System.Drawing.Point(0, 3);
@@ -295,6 +291,7 @@
             this.panel2.Size = new System.Drawing.Size(477, 336);
             this.panel2.TabIndex = 11;
             this.panel2.Visible = false;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btnVolverTarjeta
             // 
@@ -316,22 +313,12 @@
             this.btnContinuarTarjeta.UseVisualStyleBackColor = true;
             this.btnContinuarTarjeta.Click += new System.EventHandler(this.btnContinuarTarjeta_Click);
             // 
-            // label16
+            // txtFechaCaducacionTarjeta
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(49, 189);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(41, 13);
-            this.label16.TabIndex = 7;
-            this.label16.Text = "label16";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(160, 104);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 6;
-            this.textBox4.Text = "dia/mes/año";
+            this.txtFechaCaducacionTarjeta.Location = new System.Drawing.Point(160, 100);
+            this.txtFechaCaducacionTarjeta.Name = "txtFechaCaducacionTarjeta";
+            this.txtFechaCaducacionTarjeta.Size = new System.Drawing.Size(100, 20);
+            this.txtFechaCaducacionTarjeta.TabIndex = 6;
             // 
             // label15
             // 
@@ -342,13 +329,6 @@
             this.label15.TabIndex = 5;
             this.label15.Text = "codigo seguridad";
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(160, 181);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 4;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -358,13 +338,13 @@
             this.label14.TabIndex = 3;
             this.label14.Text = "Fecha caducacion";
             // 
-            // textBox2
+            // txtCodigoSeguridadTarjeta
             // 
-            this.textBox2.Location = new System.Drawing.Point(160, 137);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(48, 20);
-            this.textBox2.TabIndex = 2;
+            this.txtCodigoSeguridadTarjeta.Location = new System.Drawing.Point(160, 137);
+            this.txtCodigoSeguridadTarjeta.Name = "txtCodigoSeguridadTarjeta";
+            this.txtCodigoSeguridadTarjeta.PasswordChar = '*';
+            this.txtCodigoSeguridadTarjeta.Size = new System.Drawing.Size(48, 20);
+            this.txtCodigoSeguridadTarjeta.TabIndex = 2;
             // 
             // label12
             // 
@@ -519,12 +499,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnVolverTarjeta;
         private System.Windows.Forms.Button btnContinuarTarjeta;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtFechaCaducacionTarjeta;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCodigoSeguridadTarjeta;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtNumeroTarjeta;
         private System.Windows.Forms.Button btnSalir;
