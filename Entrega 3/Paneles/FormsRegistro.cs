@@ -118,13 +118,28 @@ namespace Entrega_3.Paneles
                 
                 Clases.User usuario = new Clases.User(usr, number, psswd, name, edad, lastname, gender, nationality, ocuppation, email, infopago, planSeleccionado, dateRegister);
                 usuarios.Add(usuario);
+
+
+                /*
+                int res = usuario.GuardarUsuario(); // Variable Resultado
+
+                switch (res)
+                {
+                    case 0:
+                        MessageBox.Show("todo correcto");
+                        break;
+                    case 1:
+                        MessageBox.Show("Se cancelo la operacion");
+                        break;
+                    case 2:
+                        MessageBox.Show("Error, no se pudo guardar el objeto.");
+                        break;
+                }
+                */
             }
             else if (radioButton4.Checked == true) //plan premiun
             {
 
-
-
-                
                 MessageBox.Show("Para continuar complete su forma de pago");
                 panel2.Visible = true;
                 string planSeleccionado = "premiun";
@@ -134,6 +149,21 @@ namespace Entrega_3.Paneles
                 //Agregar el usario a una lista de usuarios
                 Clases.User usuario = new Clases.User(usr, number, psswd, name, edad, lastname, gender, nationality, ocuppation, email, infopago, planSeleccionado, dateRegister);
                 usuarios.Add(usuario);
+
+                int res = usuario.GuardarUsuario(); // Variable Resultado //TIENE QUE IR DONDE PONER LA TARJETA
+
+                switch (res)
+                {
+                    case 0:
+                        MessageBox.Show("todo correcto");
+                        break;
+                    case 1:
+                        MessageBox.Show("Se cancelo la operacion");
+                        break;
+                    case 2:
+                        MessageBox.Show("Error, no se pudo guardar el objeto.");
+                        break;
+                }
             }
             else if (radioButton5.Checked==true)//plan familiar
             {

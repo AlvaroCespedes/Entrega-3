@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Entrega_3
 {
@@ -25,11 +27,34 @@ namespace Entrega_3
             panelregistro.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //Login. Al momento de apretar Login se tienen que cargar todos los usuarios.
         {
             this.Hide();
             PanelLogin panel = new PanelLogin();
             panel.Show();
+            
+            try
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                if (dialog.ShowDialog() == DialogResult.OK)//Si es que el usuario agrego un archivo para guardar.
+                {
+                    Stream st = File.Open(dialog.FileName, FileMode.Open);
+                    var binfor = new BinaryFormatter();
+                    Clases.User persona = (Clases.User)binfor.Deserialize(st);
+                    //textNombre.Text = persona.Nombre; 
+                }
+                else
+                {
+                    MessageBox.Show("Se cancelo la operacion"); 
+
+                }
+                
+            }
+            catch
+            {
+                MessageBox.Show("Error");
+            }
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
